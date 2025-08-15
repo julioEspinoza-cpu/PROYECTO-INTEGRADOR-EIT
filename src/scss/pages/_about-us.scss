@@ -1,11 +1,17 @@
 @use "../abstracts/mixins" as mix;
 @use "../abstracts/variables" as var;
 
+
+
+.title1 {
+    color: rgb(77, 14, 205);
+}
 .page-about-us {
     .approaches-container {
         display: flex;
         flex-direction: column;
         gap: var.$spacing-lg;
+
 
         .mission,
         .vision,
@@ -13,7 +19,7 @@
 
             &__title {
                 color: var.$color-neutro-900;
-                font-size: var.$font-size-lg;
+                font-size: var.$font-size-xl;
                 font-weight: var.$font-weight-bold;
                 padding-bottom: var.$spacing-xs;
             }
@@ -23,13 +29,16 @@
                 font-size: var.$font-size-md;
                 font-weight: var.$font-weight-regular;
                 text-align: justify;
+                line-height: var.$line-height-md ;
             }
 
             &__image {
-                height: fit-content;
-                width: 25%;
+                height: 230px;
+                width: 10%;
                 float: left;
                 margin: 0 var.$spacing-sm var.$spacing-xs 0;
+                border-radius: 10%;
+                border: solid 0.125rem var.$color-neutro-900;
             }
         }
 
