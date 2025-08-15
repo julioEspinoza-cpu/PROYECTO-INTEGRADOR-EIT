@@ -1,6 +1,7 @@
 @use "../abstracts/mixins" as mix;
 @use "../abstracts/variables" as var;
 
+<<<<<<< HEAD
 
 .slider {
   position:fixed;
@@ -13,4 +14,13 @@
   }
 
 
+=======
+.page-home {
+    .highlighted-products {
+        display: flex;
+        gap: var.$spacing-sm;
+
+        padding: var.$spacing-sm 0;
+    }
+>>>>>>> 60674727a4649e244543b4eda7969092edc92215
 }
